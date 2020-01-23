@@ -1,6 +1,8 @@
 import sys
 
-if (sys.argv[1][-1]) != '\\':
+if '/' in (sys.argv[1]) and (sys.argv[1][-1]) != '\\':
+  path=sys.argv[1]+'/Cash'
+elif (sys.argv[1][-1]) != '\\':
   path=sys.argv[1]+'\\Cash'
 else:
   path=str(sys.argv[1]+'Cash')
