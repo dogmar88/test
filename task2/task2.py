@@ -1,7 +1,6 @@
-import sys
-import math
+import sys # I have a shorter version of this program in the second file. It is more elegant, but I'm don't sure you have the geometric library installed.
 
-class Point(list):
+class Point(list): # defying classes of points, segments, figures, and checking methods
 	def __init__(self,x,y):
 	  self.x=x
 	  self.y=y
@@ -38,7 +37,7 @@ class Figure(list):
         c = True
     return c
 
-def whereThePoint (figure, point):
+def whereThePoint (figure, point): # that main method of output
     if point.x == b[0].x and point.y == b[0].y or point.x == b[1].x and point.y == b[1].y or point.x == b[2].x and point.y == b[2].y or point == b[3].x and point.y == b[3].y:
       return 0
     if figure.e.checkpoint(point)==True or figure.f.checkpoint(point)==True or figure.g.checkpoint(point)==True or figure.h.checkpoint(point)==True:
