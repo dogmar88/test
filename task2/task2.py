@@ -1,4 +1,4 @@
-import sys # I have a shorter version of this program in the second file. It is more elegant, but I'm don't sure you have the geometric library installed.
+import sys # I have a shorter version of this program in the second file. It is more elegant, but I'm don't sure you have the geometric library installed. This one works fine with horisontal/vertical lines, but fails with diagonal. I don't know precisely which type of quadrangle you'll put here.
 
 class Point(list): # defying classes of points, segments, figures, and checking methods
 	def __init__(self,x,y):
